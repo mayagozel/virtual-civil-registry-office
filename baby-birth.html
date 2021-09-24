@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="image" property="og:image" content="img/page-2.png">
+    <title>Виртуальный Загс</title>
+
+    <!--    Css file-->
+    <link rel="stylesheet" href="bootstrap-4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-baby-birth.css">
+
+    <!--    Js file-->
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap-4.6.0/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body id="baby-birth">
+
+<!--Navigation menu-->
+<section class="banner">
+
+    <div class="fixed-hamburger">
+        <label for="menu-control" class="hamburger">
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+        </label>
+
+        <input type="checkbox" id="menu-control" class="menu-control">
+
+        <aside class="sidebar">
+
+            <nav class="sidebar__menu">
+                <a href="index.html">Главная</a>
+                <a href="index.html" title="contact" onclick="slowScroll('#contact')">Обратная связь</a>
+                <a href="sign-in.html">Вход</a>
+                <a href="baby-birth-en.html">En</a>
+            </nav>
+
+            <label for="menu-control" class="sidebar__close"></label>
+
+        </aside>
+    </div>
+
+    <a href="index.html" class="logotype" onclick="slowScroll('#top')">
+        <img src="img/logo.svg">
+    </a>
+
+    <div class="banner-img">
+        <h1>Рождение ребенка, воспитание и усыновление детей.</h1>
+    </div>
+
+</section>
+
+<!--Accordion with answers to questions-->
+<div class="accordion mayas-container ques" id="accordionExample">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Запрос справки о рождении ребенка
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35.061" height="35.061" viewBox="0 0 35.061 35.061"><defs><style>.a{fill:#fbf6f1;opacity:0.4;}.b{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g transform="translate(0 35.061) rotate(-90)"><path class="a" d="M0,17.531A17.531,17.531,0,1,0,17.531,0,17.531,17.531,0,0,0,0,17.531Z" transform="translate(0)"/><path class="b" d="M0,0,6.578,6.607,13.157,0" transform="translate(10.952 14.797)"/></g></svg>
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <h3 class="first-h3">Как это работает?</h3>
+                <p>
+                    1. Заявитель <a href="sign-in.html">авторизуется</a> в портале, заполняет заявление и отправляет в органы ЗАГС.
+                </p>
+                <p>
+                    2. Органы ЗАГС оформляют и направляют справку заявителю через портал на указанный вами почтовый адрес.
+                </p>
+                <h3 class="second-h3">Необходимые документы</h3>
+                <p>
+                    Документы, удостоверяющие причастность к заявителю (нотариальная доверенность, документ, удостоверяющий родственность)
+                </p>
+                <h3 class="third-h3">Сроки оказания услуги</h3>
+                <p>В течении от 3-ех до 5-ти дней.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Изменение свидетельства о рождении
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35.061" height="35.061" viewBox="0 0 35.061 35.061"><defs><style>.a{fill:#fbf6f1;opacity:0.4;}.b{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g transform="translate(0 35.061) rotate(-90)"><path class="a" d="M0,17.531A17.531,17.531,0,1,0,17.531,0,17.531,17.531,0,0,0,0,17.531Z" transform="translate(0)"/><path class="b" d="M0,0,6.578,6.607,13.157,0" transform="translate(10.952 14.797)"/></g></svg>
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <h3 class="first-h3">Как это работает?</h3>
+                <p>
+                    1. Заявитель <a href="sign-in.html">авторизуется</a> в портале, заполняет заявление и отправляет в органы ЗАГС.
+                </p>
+                <p>
+                    2. Органы ЗАГС оформляют и направляют справку заявителю через портал на указанный вами почтовый адрес.
+                </p>
+                <h3 class="second-h3">Необходимые документы</h3>
+                <p>
+                    Документы, удостоверяющие причастность к заявителю (нотариальная доверенность, документ, удостоверяющий родственность)
+                </p>
+                <h3 class="third-h3">Сроки оказания услуги</h3>
+                <p>В течении от 3-ех до 5-ти дней.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Стать приемным родителем
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35.061" height="35.061" viewBox="0 0 35.061 35.061"><defs><style>.a{fill:#fbf6f1;opacity:0.4;}.b{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g transform="translate(0 35.061) rotate(-90)"><path class="a" d="M0,17.531A17.531,17.531,0,1,0,17.531,0,17.531,17.531,0,0,0,0,17.531Z" transform="translate(0)"/><path class="b" d="M0,0,6.578,6.607,13.157,0" transform="translate(10.952 14.797)"/></g></svg>
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                <h3 class="first-h3">Как это работает?</h3>
+                <p>
+                    1. Заявитель <a href="sign-in.html">авторизуется</a> в портале, заполняет заявление и отправляет в органы ЗАГС.
+                </p>
+                <p>
+                    2. Органы ЗАГС оформляют и направляют справку заявителю через портал на указанный вами почтовый адрес.
+                </p>
+                <h3 class="second-h3">Необходимые документы</h3>
+                <p>
+                    Документы, удостоверяющие причастность к заявителю (нотариальная доверенность, документ, удостоверяющий родственность)
+                </p>
+                <h3 class="third-h3">Сроки оказания услуги</h3>
+                <p>В течении от 3-ех до 5-ти дней.</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    Оформление опекунства
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35.061" height="35.061" viewBox="0 0 35.061 35.061"><defs><style>.a{fill:#fbf6f1;opacity:0.4;}.b{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g transform="translate(0 35.061) rotate(-90)"><path class="a" d="M0,17.531A17.531,17.531,0,1,0,17.531,0,17.531,17.531,0,0,0,0,17.531Z" transform="translate(0)"/><path class="b" d="M0,0,6.578,6.607,13.157,0" transform="translate(10.952 14.797)"/></g></svg>
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+                <h3 class="first-h3">Как это работает?</h3>
+                <p>
+                    1. Заявитель <a href="sign-in.html">авторизуется</a> в портале, заполняет заявление и отправляет в органы ЗАГС.
+                </p>
+                <p>
+                    2. Органы ЗАГС оформляют и направляют справку заявителю через портал на указанный вами почтовый адрес.
+                </p>
+                <h3 class="second-h3">Необходимые документы</h3>
+                <p>
+                    Документы, удостоверяющие причастность к заявителю (нотариальная доверенность, документ, удостоверяющий родственность)
+                </p>
+                <h3 class="third-h3">Сроки оказания услуги</h3>
+                <p>В течении от 3-ех до 5-ти дней.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="questions">
+        <h3>Часто задаваемы вопросы:</h3>
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                        Запрос справки о рождении ребенка
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35.061" height="35.061" viewBox="0 0 35.061 35.061"><defs><style>.a{fill:#fbf6f1;opacity:0.4;}.b{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g transform="translate(0 35.061) rotate(-90)"><path class="a" d="M0,17.531A17.531,17.531,0,1,0,17.531,0,17.531,17.531,0,0,0,0,17.531Z" transform="translate(0)"/><path class="b" d="M0,0,6.578,6.607,13.157,0" transform="translate(10.952 14.797)"/></g></svg>
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>
+                        Заявление в загс подают за 1 месяц до предполагаемого бракосочетания. За регистрацию
+                        брака нужно заплатить госпошлину в 20 тмт.
+                    </p>
+                    <p>
+                        Чтобы получить свидетельство о регистрации брака,
+                        нужно прийти в назначенный день в орган загс. Регистрация заключения брака может проходить
+                        в торжественной обстановке по желанию жениха и невесты.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left d-flex justify-content-between" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                        Изменение свидетельства о рождении
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35.061" height="35.061" viewBox="0 0 35.061 35.061"><defs><style>.a{fill:#fbf6f1;opacity:0.4;}.b{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g transform="translate(0 35.061) rotate(-90)"><path class="a" d="M0,17.531A17.531,17.531,0,1,0,17.531,0,17.531,17.531,0,0,0,0,17.531Z" transform="translate(0)"/><path class="b" d="M0,0,6.578,6.607,13.157,0" transform="translate(10.952 14.797)"/></g></svg>
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>
+                        Заявление в загс подают за 1 месяц до предполагаемого бракосочетания. За регистрацию
+                        брака нужно заплатить госпошлину в 20 тмт.
+                    </p>
+                    <p>
+                        Чтобы получить свидетельство о регистрации брака,
+                        нужно прийти в назначенный день в орган загс. Регистрация заключения брака может проходить
+                        в торжественной обстановке по желанию жениха и невесты.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer>
+    <div class="mayas-container others d-flex">
+        <a href="index.html" onclick="slowScroll('#top')">Главная</a>
+        <a href="index.html" title="services" onclick="slowScroll('#services')">Услуги</a>
+        <a href="index.html" title="contact" onclick="slowScroll('#contact')">Обратная связь</a>
+        <a href="sign-in.html">Вход</a>
+    </div>
+
+    <div class="position-absolute abs">
+        <p>Задизайнено Бабой-ягой</p>
+    </div>
+</footer>
+
+</body>
+</html>

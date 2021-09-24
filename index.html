@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="image" property="og:image" content="img/main.png">
+    <title>Виртуальный Загс</title>
+
+    <!--    Css file-->
+    <link rel="stylesheet" href="bootstrap-4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-index.css">
+
+    <!--    Js file-->
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap-4.6.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<!--Commit-->
+<!--Navigation menu-->
+<section class="banner" id="top">
+
+    <div class="fixed-hamburger">
+        <label for="menu-control" class="hamburger">
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+        </label>
+
+        <input type="checkbox" id="menu-control" class="menu-control">
+
+        <aside class="sidebar">
+
+            <nav class="sidebar__menu">
+                <a href="#" onclick="slowScroll('#top')">Главная</a>
+                <a href="#" title="contact" onclick="slowScroll('#contact')">Обратная связь</a>
+                <a href="sign-in.html">Вход</a>
+                <a href="index-en.html">En</a>
+            </nav>
+
+            <label for="menu-control" class="sidebar__close"></label>
+
+        </aside>
+    </div>
+
+    <a href="index.html" class="logotype" onclick="slowScroll('#top')">
+        <img src="img/logo.svg" alt="">
+    </a>
+
+    <a href="sign-in.html" class="sign-in">
+        <span>Вход</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+            <defs>
+                <style>.a {
+                    fill: #fff;
+                    opacity: 0.4;
+                }
+
+                .b, .c {
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 10;
+                    stroke-width: 1.5px;
+                }
+
+                .c {
+                    opacity: 0.4;
+                }</style>
+            </defs>
+            <g transform="translate(-75)">
+                <rect class="a" width="40" height="40" rx="20" transform="translate(75)"/>
+                <g transform="translate(84.771 10.772)">
+                    <g transform="translate(-0.772 -0.772)">
+                        <path class="b" d="M12.041.5H0" transform="translate(0.771 9.522)"/>
+                        <path class="b" d="M0,0,2.928,2.916,0,5.832" transform="translate(9.885 7.106)"/>
+                        <path class="c"
+                              d="M0,4.617V3.684A3.684,3.684,0,0,1,3.685,0H8.569a3.675,3.675,0,0,1,3.675,3.675v11.14A3.685,3.685,0,0,1,8.559,18.5H3.674A3.675,3.675,0,0,1,0,14.825v-.942"
+                              transform="translate(5.504 0.772)"/>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </a>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/main.png" class="main w-100" alt="Banner">
+                <img src="img/phone-main.png" class="black w-100" alt="Banner">
+                <img src="img/iphonex-1.png" class="three w-100" alt="Banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>
+                        Портал записи актов гражданского состояния при Министерстве адалат Туркменистана
+                    </h2>
+                    <p>
+                        Мы являемся государственным органом, осуществляющим государственный учёт,
+                        комплектование, постоянное хранение и ведение электронной базы записей актов
+                        гражданского состояния, а также контроль над правильным ведением архивов органами
+                        ЗАГС.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/illustration.png" class="main w-100" alt="Banner">
+                <img src="img/phone-illustration.png" class="black w-100" alt="Banner">
+                <img src="img/iphonex-2.png" class="three w-100" alt="Banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>
+                        Портал записи актов гражданского состояния при Министерстве адалат Туркменистана
+                    </h2>
+                    <p>
+                        Мы являемся государственным органом, осуществляющим государственный учёт,
+                        комплектование, постоянное хранение и ведение электронной базы записей актов
+                        гражданского состояния, а также контроль над правильным ведением архивов органами
+                        ЗАГС.
+                    </p>
+                </div>
+            </div>
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            </ol>
+        </div>
+    </div>
+
+</section>
+
+<!--2-nd section: How to get information?-->
+<section class="information d-flex mayas-container" id="services">
+
+    <div class="answer">
+        <div class="pink"></div>
+
+        <h1 class="ans-title">
+            Какую информацию вы хотите получить?
+        </h1>
+        <p class="ans-text">
+            На нашем портале вы можете зарегистрировать: рождение, смерть, заключить брак и совершить
+            расторжение брачного соглашения, а также запросить и другие необходимые документы находящиеся
+            под нашей юрисдикцией.
+        </p>
+    </div>
+
+    <div class="info-img">
+        <img src="img/information-img.svg" alt="information">
+    </div>
+
+</section>
+
+<!--3-rd section: Grid links - Bootstrap cards-->
+<section class="links mayas-container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Рождение ребенка, воспитание и усыновление детей</h5>
+                    <a href="baby-birth.html" class="podrobno">
+                        Подробней
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.102" height="25.102"
+                             viewBox="0 0 25.102 25.102">
+                            <defs>
+                                <style>.a {
+                                    fill: #e65c5c;
+                                    opacity: 0.4;
+                                }
+
+                                .b {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.5px;
+                                }</style>
+                            </defs>
+                            <g transform="translate(0 0)">
+                                <g transform="translate(0 25.102) rotate(-90)">
+                                    <path class="a"
+                                          d="M0,12.551A12.551,12.551,0,1,0,12.551,0,12.551,12.551,0,0,0,0,12.551Z"/>
+                                    <path class="b" d="M0,0,4.71,4.73,9.419,0" transform="translate(7.841 10.594)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Заявление на регистрацию брака и его расторжение</h5>
+                    <a href="#" class="podrobno">
+                        Подробней
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.102" height="25.102"
+                             viewBox="0 0 25.102 25.102">
+                            <defs>
+                                <style>.a {
+                                    fill: #e65c5c;
+                                    opacity: 0.4;
+                                }
+
+                                .b {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.5px;
+                                }</style>
+                            </defs>
+                            <g transform="translate(0 0)">
+                                <g transform="translate(0 25.102) rotate(-90)">
+                                    <path class="a"
+                                          d="M0,12.551A12.551,12.551,0,1,0,12.551,0,12.551,12.551,0,0,0,0,12.551Z"/>
+                                    <path class="b" d="M0,0,4.71,4.73,9.419,0" transform="translate(7.841 10.594)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Регистрация смерти, завещание и выплаты для скорбящих семей</h5>
+                    <a href="#" class="podrobno">
+                        Подробней
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.102" height="25.102"
+                             viewBox="0 0 25.102 25.102">
+                            <defs>
+                                <style>.a {
+                                    fill: #e65c5c;
+                                    opacity: 0.4;
+                                }
+
+                                .b {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.5px;
+                                }</style>
+                            </defs>
+                            <g transform="translate(0 0)">
+                                <g transform="translate(0 25.102) rotate(-90)">
+                                    <path class="a"
+                                          d="M0,12.551A12.551,12.551,0,1,0,12.551,0,12.551,12.551,0,0,0,0,12.551Z"/>
+                                    <path class="b" d="M0,0,4.71,4.73,9.419,0" transform="translate(7.841 10.594)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Справка об изменении фамилии, имени или отчества</h5>
+                    <a href="#" class="podrobno">
+                        Подробней
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.102" height="25.102"
+                             viewBox="0 0 25.102 25.102">
+                            <defs>
+                                <style>.a {
+                                    fill: #e65c5c;
+                                    opacity: 0.4;
+                                }
+
+                                .b {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.5px;
+                                }</style>
+                            </defs>
+                            <g transform="translate(0 0)">
+                                <g transform="translate(0 25.102) rotate(-90)">
+                                    <path class="a"
+                                          d="M0,12.551A12.551,12.551,0,1,0,12.551,0,12.551,12.551,0,0,0,0,12.551Z"/>
+                                    <path class="b" d="M0,0,4.71,4.73,9.419,0" transform="translate(7.841 10.594)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Запись на прием к нотариусу</h5>
+                    <a href="#" class="podrobno">
+                        Подробней
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.102" height="25.102"
+                             viewBox="0 0 25.102 25.102">
+                            <defs>
+                                <style>.a {
+                                    fill: #e65c5c;
+                                    opacity: 0.4;
+                                }
+
+                                .b {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.5px;
+                                }</style>
+                            </defs>
+                            <g transform="translate(0 0)">
+                                <g transform="translate(0 25.102) rotate(-90)">
+                                    <path class="a"
+                                          d="M0,12.551A12.551,12.551,0,1,0,12.551,0,12.551,12.551,0,0,0,0,12.551Z"/>
+                                    <path class="b" d="M0,0,4.71,4.73,9.419,0" transform="translate(7.841 10.594)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Запись на прием к руководству ЗАГС</h5>
+                    <a href="#" class="podrobno">
+                        Подробней
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.102" height="25.102"
+                             viewBox="0 0 25.102 25.102">
+                            <defs>
+                                <style>.a {
+                                    fill: #e65c5c;
+                                    opacity: 0.4;
+                                }
+
+                                .b {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.5px;
+                                }</style>
+                            </defs>
+                            <g transform="translate(0 0)">
+                                <g transform="translate(0 25.102) rotate(-90)">
+                                    <path class="a"
+                                          d="M0,12.551A12.551,12.551,0,1,0,12.551,0,12.551,12.551,0,0,0,0,12.551Z"/>
+                                    <path class="b" d="M0,0,4.71,4.73,9.419,0" transform="translate(7.841 10.594)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--4-th section: With Form-->
+<section class="consultation d-flex" id="contact">
+    <div class="left-block">
+        <img src="img/form.svg" alt="girl with computer">
+    </div>
+    <div class="right-block">
+        <div class="green"></div>
+        <h1>Вам необходима личная консультация?</h1>
+        <p>Вы можете воспользоваться формой обратной связи, для получения онлайн консультаций.</p>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Имя">
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Фамилия">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Почта">
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Телефон">
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea type="text" class="form-control" placeholder="Ваш вопрос"></textarea>
+            </div>
+            <button type="button" class="btn btn-outline-purple">Отправить</button>
+        </form>
+    </div>
+</section>
+
+<!--Footer-->
+<footer>
+    <div class="mayas-container others d-flex">
+        <a href="#" onclick="slowScroll('#top')">Главная</a>
+        <a href="#" title="services" onclick="slowScroll('#services')">Услуги</a>
+        <a href="#" title="contact" onclick="slowScroll('#contact')">Обратная связь</a>
+        <a href="sign-in.html">Вход</a>
+    </div>
+
+    <div class="position-absolute abs">
+        <p>Задизайнено Бабой-ягой</p>
+    </div>
+</footer>
+
+</body>
+</html>

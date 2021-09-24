@@ -1,0 +1,542 @@
+//Fonts
+
+//1-Black
+@font-face {
+  font-family: ALS Ekibastuz Black;
+  src: url("../fonts/Ekibastuz/ALS Ekibastuz Black.otf") format("opentype");
+}
+
+//1-Heavy
+@font-face {
+  font-family: ALS Ekibastuz Heavy;
+  src: url("../fonts/Ekibastuz/ALS Ekibastuz Heavy.otf") format("opentype");
+}
+
+//1-Bold
+@font-face {
+  font-family: ALS Ekibastuz Bold;
+  src: url("../fonts/Ekibastuz/ALS Ekibastuz Bold.otf") format("opentype");
+}
+
+//1-Regular
+@font-face {
+  font-family: ALS Ekibastuz Regular;
+  src: url("../fonts/Ekibastuz/ALS Ekibastuz Regular.otf") format("opentype");
+}
+
+//2-Bold
+@font-face {
+  font-family: SF Pro Display;
+  src: url("../fonts/SF Pro Display/SFProDisplay-Bold.ttf") format("truetype");
+}
+
+//2-Regular
+@font-face {
+  font-family: SF Pro Display;
+  src: url("../fonts/SF Pro Display/SFProDisplay-Regular.ttf") format("truetype");
+}
+
+//2-Light
+@font-face {
+  font-family: SF Pro Display;
+  src: url("../fonts/SF Pro Display/SFProDisplay-Light.ttf") format("truetype");
+}
+
+//Main
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+  font-family: "SFProDisplay", sans-serif;
+  color: #1D1D1F;
+}
+
+html, body {
+  height: 100%;
+}
+
+button, a {
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+a {
+  color: #1D1D1F;
+
+  &:hover {
+    text-decoration: none;
+    color: #1D1D1F;
+  }
+
+}
+
+.mayas-container {
+  margin-left: 220px;
+}
+
+//Navigation menu
+.banner {
+  width: 100%;
+  display: block;
+  color: #fff;
+
+  img {
+    max-width: 100%;
+  }
+
+  .fixed-hamburger {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 70px;
+    background-color: #4e3e8e;
+    z-index: 100;
+
+    .hamburger {
+      position: absolute;
+      left: 18px;
+      top: 25px;
+      display: flex;
+      height: 18px;
+      width: 24px;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+
+      &__icon {
+        display: inline-block;
+        height: 2px;
+        width: 33px;
+        background: #fff;
+        border-radius: 2px;
+      }
+    }
+
+    .sidebar {
+      height: 100vh;
+      min-width: 320px;
+      background: #4e3e8e;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 60px;
+      display: flex;
+      flex-direction: column;
+      transform: translatex(-100%);
+      transition: transform 0.4s ease-in-out;
+
+      &__close {
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        background: #6d60a5;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translatex(-100%);
+        cursor: pointer;
+        transition: transform 0.4s ease-in-out 0.2s;
+
+        &::before,
+        &::after {
+          content: "";
+          height: 2px;
+          background: #fff;
+          width: 24px;
+          display: block;
+          position: absolute;
+        }
+
+        &::after {
+          transform: rotate(90deg);
+        }
+      }
+
+      &__menu {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-around;
+        font-size: 36px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        color: #fff;
+
+        a {
+          color: currentcolor;
+          text-decoration: none;
+          transform: translatex(-80%);
+          transition: transform 0.4s ease-in-out;
+          min-width: 270px;
+          font-family: 'ALS Ekibastuz Bold', sans-serif;
+
+          &::before {
+            content: "";
+            height: 2px;
+            background: #a982d0;
+            width: 120px;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            transform: translatex(-50%);
+            opacity: 0;
+            transition: transform 0.4s ease-in-out, opacity 0.4s linear;
+          }
+
+          &:hover {
+            &::before {
+              transform: translatex(0);
+              opacity: 1;
+            }
+          }
+
+          @for $i from 1 through 5 {
+            &:nth-child(#{$i}) {
+              transition-delay: $i * 0.05s;
+            }
+          }
+        }
+      }
+    }
+
+    .menu-control {
+      display: none;
+
+
+      &:checked {
+        & + .sidebar {
+          transform: translatex(0);
+        }
+
+        & + .sidebar .sidebar__close {
+          transform: translatex(0) rotate(45deg);
+        }
+
+        & + .sidebar .sidebar__menu a {
+          transform: translatex(0);
+        }
+      }
+    }
+  }
+
+  .logotype {
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    left: 220px;
+  }
+
+  .sign-in {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    justify-content: center;
+    z-index: 5;
+
+    span {
+      padding-right: 20px;
+      font-family: 'ALS Ekibastuz', sans-serif;
+      font-size: 25px;
+      color: #fff;
+      opacity: 60%;
+    }
+
+    svg .a {
+      fill: #848085;
+      opacity: 70%;
+      transition: all ease-out 0.3s;
+    }
+
+    &:hover {
+      span {
+        opacity: 100%;
+      }
+
+      svg .a {
+        fill: #e65c5c;
+        opacity: 100%;
+      }
+    }
+  }
+
+  .carousel {
+    .carousel-inner {
+      .carousel-item {
+        .black {
+          display: none!important;
+        }
+
+        .three {
+          display: none!important;
+        }
+
+        .carousel-caption {
+          max-width: 620px;
+          text-align: left;
+          left: 220px;
+          bottom: 200px;
+
+          h2 {
+            font-family: 'ALS Ekibastuz Bold', sans-serif;
+            font-size: 50px;
+          }
+
+          p {
+            font-family: 'SF Pro Display', sans-serif;
+            font-size: 25px;
+            opacity: 60%;
+          }
+        }
+      }
+
+      .carousel-indicators {
+        margin-left: 220px;
+        bottom: 180px;
+      }
+    }
+  }
+}
+
+//2-nd section: How to get information?
+.information {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  .answer {
+    margin-right: 113px;
+
+    .pink {
+      width: 80px;
+      height: 8px;
+      background-color: #E65C5C;
+      opacity: 80%;
+    }
+
+    h1.ans-title {
+      font-family: 'ALS Ekibastuz Bold', sans-serif;
+      font-size: 40px;
+      color: #1D1D1F;
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+
+    p.ans-text {
+      font-family: 'SF Pro Display', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      color: #1D1D1F;
+      opacity: 60%;
+    }
+  }
+
+  .info-img img {
+    max-height: 290px;
+  }
+}
+
+//3-rd section: Grid links - Bootstrap cards
+.links {
+  margin-right: 300px;
+  padding-bottom: 150px;
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+
+    .col-md-4 {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .card {
+    height: 250px;
+    margin: 10px;
+    border: none;
+    border-radius: 0;
+    background-color: #FBF6F1;
+
+    .card-body {
+      padding: 0;
+      margin-top: 30px;
+      margin-left: 30px;
+      margin-right: 100px;
+
+      .card-title {
+        margin-bottom: 50px;
+        font-family: 'ALS Ekibastuz Bold', sans-serif;
+        font-size: 22px;
+      }
+
+      .podrobno {
+        font-family: 'ALS Ekibastuz Regular', sans-serif;
+        font-size: 18px;
+
+        svg {
+          width: 25px;
+          height: 25px;
+          margin-left: 10px;
+        }
+
+        &:hover svg path {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+//4-th section: With Form
+.consultation {
+  background-color: #60956E;
+
+  .left-block img {
+    max-width: 600px;
+  }
+
+  .right-block {
+    margin-top: 100px;
+    margin-left: 70px;
+    color: white;
+    max-width: 600px;
+
+    .green {
+      width: 100px;
+      height: 8px;
+      background-color: #E5F3E0;
+      opacity: 80%;
+    }
+
+    h1 {
+      font-family: 'ALS Ekibastuz Bold', sans-serif;
+      font-size: 50px;
+      margin-top: 20px;
+      margin-bottom: 37px;
+    }
+
+    p {
+      margin-bottom: 80px;
+      font-family: 'SF Pro Display', sans-serif;
+      font-size: 25px;
+      opacity: 60%;
+      max-width: 390px;
+    }
+
+    .form-row input,
+    .form-group textarea {
+      font-family: 'SF Pro Display', sans-serif;
+      font-size: 20px;
+      color: #777779;
+      border-radius: 0;
+      border: none;
+    }
+
+    .form-row input {
+      height: 60px;
+    }
+
+    .form-group textarea {
+      height: 200px;
+    }
+
+    .btn {
+      border-radius: 0;
+      border: 1px solid #bfd5c5;
+      background-color: #bfd5c5;
+      font-size: 18px;
+      font-family: "ALS Ekibastuz", sans-serif;
+      padding: 8px 20px;
+      color: #777779;
+
+      &:hover,
+      &:focus {
+        border: 1px solid #4e3e8e;
+        background-color: #4e3e8e;
+        color: white;
+      }
+
+      &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgb(157, 113, 200);
+      }
+    }
+  }
+}
+
+//Footer
+footer {
+  background-color: #4e3e8e;
+  min-height: 164px;
+  position: relative;
+
+  .others {
+    padding-top: 50px;
+
+    a {
+      color: white;
+      font-family: 'ALS Ekibastuz Bold', sans-serif;
+      font-size: 30px;
+      margin-right: 100px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .abs {
+    right: 70px;
+    bottom: 20px;
+
+    p {
+      color: white;
+      font-family: 'ALS Ekibastuz', sans-serif;
+      font-size: 20px;
+      opacity: 60%;
+    }
+  }
+}
+
+@import "baby-birth.scss";
+@import "sign-in.scss";
+
+@media (max-width: 470px) {
+  .banner .fixed-hamburger {
+    .sidebar__menu {
+      font-size: 25px;
+    }
+
+    .sidebar {
+      min-width: 300px;
+    }
+  }
+
+  footer {
+    min-height: 90px;
+
+    .others {
+      display: none!important;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .banner .fixed-hamburger .sidebar {
+    min-width: 260px;
+  }
+
+  .banner .fixed-hamburger .sidebar {
+    padding: 0 30px;
+  }
+}

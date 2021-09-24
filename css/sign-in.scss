@@ -1,0 +1,78 @@
+#sign-in {
+  .banner {
+    min-height: 100%;
+    width: 100%;
+    background: url('../img/sign-in.svg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    color: #fff;
+  }
+
+  form {
+    margin-left: 160px;
+    margin-top: 100px;
+
+    .buttons {
+      justify-content: right;
+      text-align: right;
+    }
+
+    .btn {
+      width: 130px;
+      height: 40px;
+      background-color: #6346D6;
+      border: none;
+      border-radius: 0;
+      color: white;
+      font-size: 18px;
+      font-family: "ALS Ekibastuz Bold", sans-serif;
+
+      &:hover,
+      &:focus {
+        background-color: #EDE6FC;
+        color: #777779;
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgb(152, 135, 221);
+      }
+    }
+
+    h1 {
+      font-family: 'ALS Ekibastuz Bold', sans-serif;
+      font-size: 45px;
+      color: #1D1D1F;
+      max-width: 350px;
+      margin-bottom: 40px;
+    }
+
+    .mine input {
+      max-width: 430px;
+      height: 60px;
+      color: #777779;
+      font-size: 20px;
+      font-family: 'SF Pro Display Regular', sans-serif;
+      border-radius: 0;
+      border: none;
+      padding: 18px 25px;
+    }
+
+    .bot {
+      margin-top: 100px;
+
+      a {
+        font-size: 18px;
+        color: #1D1D1F;
+        text-decoration: underline;
+        transition: all ease-out 0.3s;
+
+        &:hover {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="image" property="og:image" content="img/signing.png">
+    <title>Виртуальный Загс</title>
+
+    <!--    Css file-->
+    <link rel="stylesheet" href="bootstrap-4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-sign-in.css">
+
+    <!--    Js file-->
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap-4.6.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body id="sign-in">
+
+<!--Navigation menu-->
+<section class="banner" id="top">
+
+    <div class="fixed-hamburger">
+        <label for="menu-control" class="hamburger">
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+        </label>
+
+        <input type="checkbox" id="menu-control" class="menu-control">
+
+        <aside class="sidebar">
+
+            <nav class="sidebar__menu">
+                <a href="index.html">Главная</a>
+                <a href="index.html" title="contact" onclick="slowScroll('#contact')">Обратная связь</a>
+                <a href="sign-in.html">Вход</a>
+                <a href="sign-in-en.html">En</a>
+            </nav>
+
+            <label for="menu-control" class="sidebar__close"></label>
+
+        </aside>
+    </div>
+
+    <a href="index.html" class="logotype" onclick="slowScroll('#top')">
+        <img src="img/logo.svg">
+    </a>
+
+    <form>
+        <h1>Вход в личный кабинет</h1>
+        <div class="form-group mine">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Логин">
+        </div>
+        <div class="form-group mine">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+        </div>
+        <div class="buttons">
+            <button type="submit" class="btn">Войти</button>
+        </div>
+        <div class="bot d-flex justify-content-between">
+            <a href="#" class="forgot">Забыл пароль?</a>
+            <a href="#" class="sign-up">Регистрация</a>
+        </div>
+    </form>
+
+</section>
+
+</body>
+</html>

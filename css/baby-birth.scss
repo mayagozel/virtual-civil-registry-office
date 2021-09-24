@@ -1,0 +1,203 @@
+#baby-birth {
+  .banner {
+    .banner-img {
+      background-image: url("../img/banner-img.svg");
+      min-height: 360px;
+
+      h1 {
+        font-family: 'ALS Ekibastuz Bold', sans-serif;
+        font-size: 40px;
+        color: #FBF6F1;
+        max-width: 830px;
+        padding-top: 150px;
+        padding-left: 220px;
+      }
+    }
+  }
+
+  .logotype {
+    top: 30px;
+  }
+
+  .accordion {
+    margin-top: 65px;
+    position: relative;
+
+    .card {
+      border: none;
+      border-radius: 0;
+      flex-direction: row;
+      position: initial;
+
+      .card-header {
+        background-color: #E5F3E0;
+        width: 580px;
+        height: 80px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        transition: all ease-in-out 0.3s;
+        border-bottom: none;
+
+        &:hover,
+        &:focus {
+          background-color: #402E88;
+
+          .btn-link {
+            color: white;
+          }
+
+          .mb-0:hover svg .a {
+            fill: #E65C5C;
+            opacity: 0.4;
+          }
+        }
+
+        .btn {
+          padding: 10px 0;
+        }
+
+        .btn-link {
+          color: #1D1D1F;
+          font-family: 'ALS Ekibastuz Bold', sans-serif;
+          font-size: 23px;
+
+          &:hover,
+          &:focus {
+            text-decoration: none;
+            box-shadow: none;
+          }
+
+          svg .a {
+            fill: #60956E;
+            opacity: 0.4;
+            transition: all ease-in-out 0.2s;
+          }
+        }
+      }
+
+      .card-body {
+        background: #FBF6F1;
+        min-height: 825px;
+        width: 880px;
+        position: absolute;
+        top: 0;
+        padding: 40px;
+
+        a {
+          text-decoration: underline;
+
+          &:hover {
+            color: #1D1D1F;
+          }
+        }
+
+        h3 {
+          font-family: 'ALS Ekibastuz Bold', sans-serif;
+          font-size: 33px;
+          color: #1D1D1F;
+          margin-bottom: 0;
+        }
+
+        p {
+          margin-bottom: 0;
+          padding-right: 90px;
+          font-family: 'SF Pro Display Regular', sans-serif;
+          width: 530px;
+          font-size: 20px;
+          color: #1D1D1F;
+          opacity: 60%;
+        }
+
+        p:last-child {
+          margin-top: 25px;
+        }
+
+        .second-h3 {
+          margin-top: 50px;
+        }
+
+        .third-h3 {
+          margin-top: 50px;
+        }
+      }
+    }
+
+    .questions {
+      background-color: #EDE6FC;
+      max-width: 580px;
+      min-height: 290px;
+      margin-bottom: 100px;
+      margin-right: 50px;
+      margin-top: 80px;
+
+      h3 {
+        font-family: 'ALS Ekibastuz Bold', sans-serif;
+        font-size: 25px;
+        color: #1D1D1F;
+        margin-left: 25px;
+        padding-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .card {
+        background-color: initial;
+        margin-left: 25px;
+        flex-direction: column;
+        margin-right: 50px;
+        max-width: 530px;
+        padding-bottom: 15px;
+
+        .collapse {
+          max-width: 505px;
+          background: rgb(154, 134, 229);
+        }
+
+        .card-header {
+          max-width: 505px;
+          max-height: 65px;
+          background-color: #9A86E5;
+          margin-bottom: 0;
+
+          &:hover .mb-0 .btn svg .a {
+            fill: #402E88;
+          }
+
+          .btn {
+            padding: 5px 0;
+          }
+
+          .btn-link {
+            font-size: 20px;
+            color: white;
+
+            svg {
+              width: 32px;
+              height: 32px;
+
+              .a {
+                fill: #E65C5C;
+                opacity: 40%;
+              }
+            }
+          }
+        }
+
+        .card-body {
+          position: relative;
+          max-width: 505px;
+          min-height: 100%;
+          margin-bottom: 40px;
+          background-color: #9A86E5;
+
+          p {
+            font-family: 'SF Pro Display Regular', sans-serif;
+            font-size: 20px;
+            color: #EDE6FC;
+          }
+        }
+      }
+    }
+  }
+
+
+}

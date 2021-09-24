@@ -1,0 +1,365 @@
+@media (max-width: 1720px) {
+  #baby-birth .accordion .card .card-body {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1540px) {
+  #baby-birth .accordion .card .card-body {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .mayas-container {
+    margin-left: 120px;
+  }
+
+  footer .others a {
+    font-size: 28px;
+    margin-right: 50px;
+  }
+
+  #baby-birth .banner .banner-img h1 {
+    padding-top: 150px;
+    padding-left: 120px;
+  }
+
+  .banner {
+    .logotype {
+      top: 20px;
+      left: 120px;
+    }
+
+    img {
+      max-height: 60px;
+    }
+  }
+
+
+}
+
+@media (max-width: 1280px) {
+  #baby-birth .accordion .card .card-body {
+    max-width: 450px;
+
+    p {
+      width: 450px;
+    }
+  }
+}
+
+@media (max-width: 1195px) {
+  #baby-birth .accordion {
+    //margin-bottom: 100px;
+
+    .card {
+      flex-direction: column;
+      margin-right: 50px;
+
+      .card-header {
+        width: 100%;
+      }
+
+      .card-body {
+        position: relative;
+        min-width: 100%;
+        min-height: 100%;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  #baby-birth {
+    .banner .banner-img h1 {
+      max-width: 600px;
+      font-size: 33px;
+    }
+
+    .accordion .card .card-header {
+      margin-right: 50px;
+    }
+  }
+
+  footer {
+    .others a {
+      font-size: 23px;
+      margin-right: 20px;
+    }
+
+    .abs {
+      bottom: 0;
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  #baby-birth .accordion .questions .card {
+    .collapse {
+      max-width: 505px;
+    }
+
+    .card-body {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .mayas-container {
+    margin-left: 90px;
+  }
+
+  #baby-birth {
+    .banner {
+      .banner-img h1 {
+        padding-top: 150px;
+        padding-left: 90px;
+      }
+
+      .logotype {
+        left: 90px;
+      }
+    }
+
+    .accordion {
+      .card {
+        margin-right: 20px;
+      }
+
+      .questions {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  #baby-birth {
+    .banner .banner-img h1 {
+      max-width: 550px;
+      font-size: 25px;
+    }
+
+    .accordion .questions .card {
+      .card-header .btn-link {
+        font-size: 18px;
+
+        svg {
+          width: 27px;
+        }
+      }
+
+      .card-body p {
+        font-size: 18px;
+      }
+    }
+
+    .accordion .card {
+      .card-header {
+        height: 70px;
+
+        .btn-link {
+          font-size: 18px;
+
+          svg {
+            width: 30px;
+          }
+        }
+      }
+
+      .card-body {
+        padding: 20px;
+        h3 {
+          font-size: 25px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  #baby-birth .accordion .questions .card .card-header {
+    max-height: 70px;
+  }
+
+  #baby-birth .accordion .questions .card .card-header .btn {
+    padding-top: 10px;
+  }
+
+  #baby-birth .accordion .questions .card:last-child {
+    .card-header .btn {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  #baby-birth .accordion .card .card-body p {
+    width: 400px;
+  }
+}
+
+@media (max-width: 562px) {
+  #baby-birth .accordion .card .card-body p {
+    padding-right: 0;
+    width: 300px;
+  }
+
+  #baby-birth {
+    .accordion .questions .card .card-header .btn {
+      padding: 0;
+    }
+
+    .banner .banner-img h1 {
+      padding-top: 150px;
+      padding-left: 90px;
+      padding-right: 20px;
+    }
+  }
+
+  footer .others a {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 515px) {
+  #baby-birth .accordion .card .card-header .btn {
+    padding: 0;
+  }
+
+  footer {
+    .mayas-container {
+      margin-left: 80px;
+    }
+
+    .others a {
+      font-size: 16px;
+      margin-right: 20px;
+    }
+
+    .abs {
+      right: 30px;
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  #baby-birth .accordion .card .card-body p {
+    font-size: 16px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 475px) {
+  #baby-birth .accordion .questions .card {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .banner .fixed-hamburger {
+    .sidebar {
+      max-width: 100px;
+    }
+  }
+
+  #baby-birth .accordion .questions .card .card-body p {
+    font-size: 14px;
+    width: 200px;
+  }
+
+  #baby-birth .accordion .card .card-body {
+    h3 {
+      font-size: 20px;
+      width: 200px;
+    }
+
+    p {
+      font-size: 14px;
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  #baby-birth .accordion .card .card-header {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 360px) {
+  .banner {
+    .logotype {
+      left: 65px;
+      top: 10px;
+    }
+
+    .fixed-hamburger {
+      width: 50px;
+
+      .hamburger {
+        left: 8px;
+      }
+    }
+  }
+
+  #baby-birth .banner {
+    .logotype {
+      left: 70px;
+
+      img {
+        max-height: 40px;
+      }
+    }
+
+    .banner-img h1 {
+      padding-left: 60px;
+    }
+  }
+
+  .mayas-container {
+    margin-left: 70px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 330px) {
+  #baby-birth .accordion .questions .card .card-body p {
+    width: 170px;
+  }
+}
+
+@media (max-width: 315px) {
+  #baby-birth .accordion .card .card-body p {
+    width: 180px;
+  }
+}
+
+@media (max-width: 305px) {
+  #baby-birth .accordion .questions .card .card-body p {
+    width: 150px;
+  }
+}
+
+
+
+
+
+
+
+

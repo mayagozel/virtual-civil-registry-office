@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="image" property="og:image" content="img/main.png">
+    <title>Virtual Civil Registry Office</title>
+
+    <!--    Css file-->
+    <link rel="stylesheet" href="bootstrap-4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-index.css">
+
+    <!--    Js file-->
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap-4.6.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<!--Commit-->
+<!--Navigation menu-->
+<section class="banner" id="top">
+
+    <div class="fixed-hamburger">
+        <label for="menu-control" class="hamburger">
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+        </label>
+
+        <input type="checkbox" id="menu-control" class="menu-control">
+
+        <aside class="sidebar">
+
+            <nav class="sidebar__menu">
+                <a href="#" onclick="slowScroll('#top')">Home</a>
+                <a href="#" title="contact" onclick="slowScroll('#contact')">Feedback</a>
+                <a href="sign-in-en.html">Sign in</a>
+                <a href="index.html">Ru</a>
+            </nav>
+
+            <label for="menu-control" class="sidebar__close"></label>
+
+        </aside>
+    </div>
+
+    <a href="#" class="logotype" onclick="slowScroll('#top')">
+        <img src="img/logo.svg" alt="">
+    </a>
+
+    <a href="sign-in-en.html" class="sign-in">
+        <span>Sign in</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+            <defs>
+                <style>.a {
+                    fill: #fff;
+                    opacity: 0.4;
+                }
+
+                .b, .c {
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 10;
+                    stroke-width: 1.5px;
+                }
+
+                .c {
+                    opacity: 0.4;
+                }</style>
+            </defs>
+            <g transform="translate(-75)">
+                <rect class="a" width="40" height="40" rx="20" transform="translate(75)"/>
+                <g transform="translate(84.771 10.772)">
+                    <g transform="translate(-0.772 -0.772)">
+                        <path class="b" d="M12.041.5H0" transform="translate(0.771 9.522)"/>
+                        <path class="b" d="M0,0,2.928,2.916,0,5.832" transform="translate(9.885 7.106)"/>
+                        <path class="c"
+                              d="M0,4.617V3.684A3.684,3.684,0,0,1,3.685,0H8.569a3.675,3.675,0,0,1,3.675,3.675v11.14A3.685,3.685,0,0,1,8.559,18.5H3.674A3.675,3.675,0,0,1,0,14.825v-.942"
+                              transform="translate(5.504 0.772)"/>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </a>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/main.png" class="main w-100" alt="Banner">
+                <img src="img/phone-main.png" class="black w-100" alt="Banner">
+                <img src="img/iphonex-1.png" class="three w-100" alt="Banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>
+                        The Portal of Civil Registration of Turkmenistan
+                    </h2>
+                    <p>
+                        We are a State Organization, which provides state registration, data acquisition, constant
+                        storage and maintenance of an electronic database of civil status, as well as control of the
+                        correct maintenance of archives by the registry office.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/illustration.png" class="main w-100" alt="Banner">
+                <img src="img/phone-illustration.png" class="black w-100" alt="Banner">
+                <img src="img/iphonex-2.png" class="three w-100" alt="Banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>
+                        The Portal of Civil Registration of Turkmenistan
+                    </h2>
+                    <p>
+                        We are a State Organization, which provides state registration, data acquisition, constant
+                        storage and maintenance of an electronic database of civil status, as well as control of the
+                        correct maintenance of archives by the registry office.
+                    </p>
+                </div>
+            </div>
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            </ol>
+        </div>
+    </div>
+
+</section>
+
+<!--2-nd section: How to get information?-->
+<section class="information d-flex mayas-container" id="services">
+
+    <div class="answer">
+        <div class="pink"></div>
+
+        <h1 class="ans-title">
+            What kind of information do you need?
+        </h1>
+        <p class="ans-text">
+            At our portal you can register: a birth, a death, a marriage and an agreement of divorce, and also request
+            the other necessary documents, under our jurisdiction.
+        </p>
+    </div>
+
+    <div class="info-img">
+        <img src="img/information-img.svg" alt="information">
+    </div>
+
+</section>
+
+<!--3-rd section: Grid links - Bootstrap cards-->
+<section class="links mayas-container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Birth of a child, parenting and adoption of children</h5>
+                    <a href="baby-birth-en.html" class="podrobno">
+                        More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.102" height="25.102"
+                             viewBox="0 0 25.102 25.102">
+                            <defs>
+                                <style>.a {
+                                    fill: #e65c5c;
+                                    opacity: 0.4;
+                                }
+
+                                .b {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.5px;
+                                }</style>
+                            </defs>
+                            <g transform="translate(0 0)">
+                                <g transform="translate(0 25.102) rotate(-90)">
+                                    <path class="a"
+                                          d="M0,12.551A12.551,12.551,0,1,0,12.551,0,12.551,12.551,0,0,0,0,12.551Z"/>
+                                    <path class="b" d="M0,0,4.71,4.73,9.419,0" transform="translate(7.841 10.594)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Application for registration of marriage and its dissolution</h5>
+                    <a href="baby-birth-en.html" class="podrobno">
+                        More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.102" height="25.102"
+                             viewBox="0 0 25.102 25.102">
+                            <defs>
+                                <style>.a {
+                                    fill: #e65c5c;
+                                    opacity: 0.4;
+                                }
+
+                                .b {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.5px;
+                                }</style>
+                            </defs>
+                            <g transform="translate(0 0)">
+                                <g transform="translate(0 25.102) rotate(-90)">
+                                    <path class="a"
+                                          d="M0,12.551A12.551,12.551,0,1,0,12.551,0,12.551,12.551,0,0,0,0,12.551Z"/>
+                                    <path class="b" d="M0,0,4.71,4.73,9.419,0" transform="translate(7.841 10.594)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Death Registration, Testament and Benefit payments for Grieving Families</h5>
+                    <a href="baby-birth-en.html" class="podrobno">
+                        More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.102" height="25.102"
+                             viewBox="0 0 25.102 25.102">
+                            <defs>
+                                <style>.a {
+                                    fill: #e65c5c;
+                                    opacity: 0.4;
+                                }
+
+                                .b {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.5px;
+                                }</style>
+                            </defs>
+                            <g transform="translate(0 0)">
+                                <g transform="translate(0 25.102) rotate(-90)">
+                                    <path class="a"
+                                          d="M0,12.551A12.551,12.551,0,1,0,12.551,0,12.551,12.551,0,0,0,0,12.551Z"/>
+                                    <path class="b" d="M0,0,4.71,4.73,9.419,0" transform="translate(7.841 10.594)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Certificate of changing a surname, name or patronymic </h5>
+                    <a href="baby-birth-en.html" class="podrobno">
+                        More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.102" height="25.102"
+                             viewBox="0 0 25.102 25.102">
+                            <defs>
+                                <style>.a {
+                                    fill: #e65c5c;
+                                    opacity: 0.4;
+                                }
+
+                                .b {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.5px;
+                                }</style>
+                            </defs>
+                            <g transform="translate(0 0)">
+                                <g transform="translate(0 25.102) rotate(-90)">
+                                    <path class="a"
+                                          d="M0,12.551A12.551,12.551,0,1,0,12.551,0,12.551,12.551,0,0,0,0,12.551Z"/>
+                                    <path class="b" d="M0,0,4.71,4.73,9.419,0" transform="translate(7.841 10.594)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">An appointment to the notary</h5>
+                    <a href="baby-birth-en.html" class="podrobno">
+                        More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.102" height="25.102"
+                             viewBox="0 0 25.102 25.102">
+                            <defs>
+                                <style>.a {
+                                    fill: #e65c5c;
+                                    opacity: 0.4;
+                                }
+
+                                .b {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.5px;
+                                }</style>
+                            </defs>
+                            <g transform="translate(0 0)">
+                                <g transform="translate(0 25.102) rotate(-90)">
+                                    <path class="a"
+                                          d="M0,12.551A12.551,12.551,0,1,0,12.551,0,12.551,12.551,0,0,0,0,12.551Z"/>
+                                    <path class="b" d="M0,0,4.71,4.73,9.419,0" transform="translate(7.841 10.594)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">An appointment to the management of the registry office</h5>
+                    <a href="baby-birth-en.html" class="podrobno">
+                        More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.102" height="25.102"
+                             viewBox="0 0 25.102 25.102">
+                            <defs>
+                                <style>.a {
+                                    fill: #e65c5c;
+                                    opacity: 0.4;
+                                }
+
+                                .b {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 1.5px;
+                                }</style>
+                            </defs>
+                            <g transform="translate(0 0)">
+                                <g transform="translate(0 25.102) rotate(-90)">
+                                    <path class="a"
+                                          d="M0,12.551A12.551,12.551,0,1,0,12.551,0,12.551,12.551,0,0,0,0,12.551Z"/>
+                                    <path class="b" d="M0,0,4.71,4.73,9.419,0" transform="translate(7.841 10.594)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--4-th section: With Form-->
+<section class="consultation d-flex" id="contact">
+    <div class="left-block">
+        <img src="img/form.svg" alt="girl with computer">
+    </div>
+    <div class="right-block">
+        <div class="green"></div>
+        <h1>Do you need a personal consultation?</h1>
+        <p>You can use the feedback form to get online consultations.</p>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Phone">
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea type="text" class="form-control" placeholder="Your question"></textarea>
+            </div>
+            <button type="button" class="btn btn-outline-purple">Send</button>
+        </form>
+    </div>
+</section>
+
+<!--Footer-->
+<footer>
+    <div class="mayas-container others d-flex">
+        <a href="#" onclick="slowScroll('#top')">Home</a>
+        <a href="#" title="services" onclick="slowScroll('#services')">Services</a>
+        <a href="#" title="contact" onclick="slowScroll('#contact')">Feedback</a>
+        <a href="sign-in-en.html">Sign in</a>
+    </div>
+
+    <div class="position-absolute abs">
+        <p>Designed by team "Baba Yaga"</p>
+    </div>
+</footer>
+
+</body>
+</html>
